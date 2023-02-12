@@ -6,7 +6,7 @@ var VERSION = 'version_01'              // Version of the off-line cache (change
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
   //'/myRepository/',                     // If you have separate JS/CSS files,
-  //'/myRepository/index.html',
+  '/myRepository/index.html',
   '/myRepository/styles.css',
   '/myRepository/sw.js',
   'https://static.vecteezy.com/packs/media/vectors/term-bg-1-3d6355ab.jpg'            // add path to those files here
