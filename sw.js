@@ -5,7 +5,7 @@ var APP_PREFIX = 'myApp'     // Identifier for this app (this needs to be consis
 var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
-  '/myRepository/',                     // If you have separate JS/CSS files,
+  //'/myRepository/',                     // If you have separate JS/CSS files,
   //'/myRepository/index.html',
   '/myRepository/styles.css',
   '/myRepository/sw.js',
@@ -14,22 +14,21 @@ var URLS = [                            // Add URL you want to cache in this lis
 
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
-//   console.log('fetch request : ' + e.request.url)
-//   e.respondWith(
-//     caches.match(e.request).then(function (request) {
-//       if (request) { // if cache is available, respond with cache
-//         console.log('responding with cache : ' + e.request.url)
-//         return request
-//       } else {       // if there are no cache, try fetching request
-//         console.log('file is not cached, fetching : ' + e.request.url)
-//         return fetch(e.request)
-//       }
+  console.log('fetch request : ' + e.request.url)
+  e.respondWith(
+    caches.match(e.request).then(function (request) {
+      if (request) { // if cache is available, respond with cache
+        console.log('responding with cache : ' + e.request.url)
+        return request
+      } else {       // if there are no cache, try fetching request
+        console.log('file is not cached, fetching : ' + e.request.url)
+        return fetch(e.request)
+      }
 
-//       // You can omit if/else for console.log & put one line below like this too.
-//       // return request || fetch(e.request)
-//     })
-//     )
-    return
+      // You can omit if/else for console.log & put one line below like this too.
+      // return request || fetch(e.request)
+    })
+    )
 })
 
 // Cache resources
