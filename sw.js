@@ -1,14 +1,14 @@
  if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('/myRepository/sw.js', {scope: '/myRepository/'})
+  navigator.serviceWorker.register('/myrepository/sw.js', {scope: '/myrepository/'})
 }
 var APP_PREFIX = 'myApp'     // Identifier for this app (this needs to be consistent across every cache update)
 var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
-  '/myRepository/',                     // If you have separate JS/CSS files,
-  '/myRepository/index.html',
-  '/myRepository/styles.css',
-  '/myRepository/sw.js',
+  '/myrepository/',                     // If you have separate JS/CSS files,
+  '/myrepository/index.html',
+  '/myrepository/styles.css',
+  '/myrepository/sw.js',
   'https://static.vecteezy.com/packs/media/vectors/term-bg-1-3d6355ab.jpg'            // add path to those files here
   ]
 
