@@ -9,7 +9,9 @@ var URLS = [                            // Add URL you want to cache in this lis
   '/myrepository/index.html',
   '/myrepository/styles.css',
   '/myrepository/sw.js',
-  'https://static.vecteezy.com/packs/media/vectors/term-bg-1-3d6355ab.jpg'            // add path to those files here
+  '/myrepository/favicon.png',
+  'https://static.vecteezy.com/packs/media/vectors/term-bg-1-3d6355ab.jpg',            // add path to those files here
+  'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg'
   ]
 
 // Respond with cached resources
