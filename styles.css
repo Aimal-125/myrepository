@@ -13,29 +13,15 @@
 	text-shadow: 1px 1px 3px black;
 	padding: 20px;
 	font-family: helvetica;
-	font-size: 90%;
+	font-size: 80%;
 	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
 }
 #img1, #img2 {
 	width: 50%;
 	height: 50%;
-	position: absolute;
+	display: block;
+	margin: auto;
 	border-radius: 7px;
 	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.17);
 	border: 4px solid transparent;
-}
-#img1 {
-	top: 25%;
-	left: 5%;
-}
-#img2 {
-	top: 25%;
-	right: 5%;
-}
-@media screen and (max-width: 800px) {
-	#img1, #img2 {
-		position: initial;
-		display block;
-		margin: auto;
-	}
 }
