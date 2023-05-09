@@ -6,6 +6,9 @@
 	box-sizing: border-box;
 	font-family: helvetica;
 }
+body {
+	background: lightblue;
+}
 #hgroup {
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.015);
@@ -19,7 +22,10 @@
 #div1 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
 }
 #img1, #img2 {
 	width: 300px;
